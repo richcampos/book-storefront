@@ -36,11 +36,8 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Navigation Links */}
           <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-obsidian/75">
-            <a href="#framework" className="hover:text-vermilion transition-colors">
-              Tarjeta Scoring M.E.T.A.
-            </a>
             <a href="#inside" className="hover:text-vermilion transition-colors">
-              Los 7 Capítulos
+              Las 5 reglas de oro
             </a>
             <a href="#author" className="hover:text-vermilion transition-colors">
               El Autor
@@ -55,6 +52,13 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <BookOpen className="w-3.5 h-3.5 text-vermilion" />
               Leer Extracto
+            </button>
+
+            <button
+              onClick={onOpenReader}
+              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold text-obsidian bg-white border border-obsidian/15 hover:border-obsidian/40 transition-all shadow-sm"
+            >
+              Próximamente App de Tarjeta Scoring M.E.T.A.
             </button>
 
             <a
