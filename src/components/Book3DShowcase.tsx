@@ -25,7 +25,7 @@ export const Book3DShowcase: React.FC<Book3DShowcaseProps> = ({ onOpenReader }) 
         <div className="relative w-[280px] sm:w-[330px] h-[410px] sm:h-[470px] book-tilt shadow-book rounded-r-xl rounded-l-[4px] bg-[#141619] text-alabaster border border-obsidian/20 flex flex-col justify-between p-6 sm:p-7 overflow-hidden">
           {/* Full-Bleed Uploaded Artwork Background */}
           <img
-            src={`${import.meta.env.BASE_URL}book-cover.jpg`}
+            src="book-cover.jpg"
             alt="Portada de Cadencia Profunda"
             className="absolute inset-0 w-full h-full object-cover object-center z-0 transition-transform duration-700 group-hover:scale-[1.03]"
           />
