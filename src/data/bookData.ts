@@ -222,8 +222,8 @@ export const CORE_PILLARS = [
 
 export const TABLE_OF_CONTENTS: BookPart[] = [
   {
-    partNumber: 'PARTE I',
-    title: 'La Arquitectura de la Atención',
+    partNumber: 'REGLA I',
+    title: 'ENFOQUE GLOBAL Y MENTE',
     subtitle: 'Por qué la fuerza de voluntad fracasa frente a los entornos digitales modernos y cómo rediseñar tus ajustes por defecto.',
     chapters: [
       {
@@ -257,8 +257,8 @@ export const TABLE_OF_CONTENTS: BookPart[] = [
     ],
   },
   {
-    partNumber: 'PARTE II',
-    title: 'El Protocolo de Cadencia Diaria',
+    partNumber: 'REGLA II',
+    title: 'PLAN DE HOYO',
     subtitle: 'Cómo construir un ciclo repetible de 24 horas para avanzar sin fricción.',
     chapters: [
       {
@@ -291,8 +291,8 @@ export const TABLE_OF_CONTENTS: BookPart[] = [
     ],
   },
   {
-    partNumber: 'PARTE III',
-    title: 'Ejecución de Alto Apalancamiento',
+    partNumber: 'REGLA III',
+    title: 'DESDE EL TEE',
     subtitle: 'Elegir los problemas correctos y entregar resultados sin caer en el perfeccionismo.',
     chapters: [
       {
@@ -325,8 +325,42 @@ export const TABLE_OF_CONTENTS: BookPart[] = [
     ],
   },
   {
-    partNumber: 'PARTE IV',
-    title: 'Maestría Sostenible',
+    partNumber: 'REGLA IV',
+    title: 'APROXIMACIÓN',
+    subtitle: 'Cómo dosificar tu ambición a lo largo de trimestres, años y décadas.',
+    chapters: [
+      {
+        number: 10,
+        title: 'El Reinicio del Viernes y la Calibración Semanal',
+        pages: 'págs. 249–270',
+        readTime: '18 min de lectura',
+        summary:
+          'Un ritual paso a paso de 30 minutos para los viernes por la tarde que transforma semanas caóticas en aprendizajes acumulativos.',
+        keyTakeaway: 'Checklist: La Retrospectiva de 5 Preguntas del Viernes.',
+      },
+      {
+        number: 11,
+        title: 'Sprints de 6 Semanas y Descompresión Deliberada',
+        pages: 'págs. 271–292',
+        readTime: '21 min de lectura',
+        summary:
+          'Reemplaza las metas anuales rígidas por ciclos de construcción de 6 semanas seguidos de 1 semana dedicada al mantenimiento y la curiosidad.',
+        keyTakeaway: 'Planificador: La Arquitectura de Sprints Estacionales.',
+      },
+      {
+        number: 12,
+        title: 'Una Vida Medida en Profundidad, No en Velocidad',
+        pages: 'págs. 293–312',
+        readTime: '17 min de lectura',
+        summary:
+          'Una reflexión final sobre el oficio, la presencia y por qué recuperar tu atención es el acto supremo de libertad creativa.',
+        keyTakeaway: 'Manifiesto: Los 10 Principios de una Vida en Cadencia Profunda.',
+      },
+    ],
+  },
+  {
+    partNumber: 'REGLA V',
+    title: 'EN EL GREEN',
     subtitle: 'Cómo dosificar tu ambición a lo largo de trimestres, años y décadas.',
     chapters: [
       {
@@ -361,7 +395,7 @@ export const TABLE_OF_CONTENTS: BookPart[] = [
 ];
 
 export const CHAPTER_ONE_EXCERPT = {
-  chapterNumber: 'CAPÍTULO 01',
+  chapterNumber: 'REGLA 01',
   title: 'El Mito de la Jornada de 10 Horas',
   epigraph:
     '«El mayor obstáculo para el trabajo significativo no es la pereza; es el agotador teatro de parecer siempre disponible.»',

@@ -55,7 +55,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             </button>
 
             <button
-              onClick={onOpenReader}
               className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold text-obsidian bg-white border border-obsidian/15 hover:border-obsidian/40 transition-all shadow-sm"
             >
               Próximamente App de Tarjeta Scoring M.E.T.A.

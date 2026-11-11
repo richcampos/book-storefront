@@ -14,11 +14,8 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ onOpenReader }
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <span className="inline-block text-xs font-extrabold uppercase tracking-[0.2em] text-vermilion bg-vermilion-light px-3 py-1 rounded-full">
-            DENTRO DEL MANUAL DE 312 PÁGINAS
-          </span>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-obsidian tracking-tight">
-            Explora el Programa de 12 Capítulos
+            Las 5 reglas de oro
           </h2>
           <p className="text-base sm:text-lg text-obsidian/70">
             Cada capítulo concluye con un diagrama arquitectónico de una página y un protocolo práctico para aplicar el lunes por la mañana. Haz clic en cualquier parte para ver su contenido.
@@ -49,9 +46,6 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ onOpenReader }
                       <span className="text-xs font-mono font-bold uppercase tracking-widest px-2.5 py-0.5 rounded bg-obsidian text-white">
                         {part.partNumber}
                       </span>
-                      <span className="text-xs font-semibold text-obsidian/50">
-                        {part.chapters.length} Capítulos
-                      </span>
                     </div>
                     <h3 className="font-display font-extrabold text-xl sm:text-2xl text-obsidian pt-1">
                       {part.title}
@@ -59,17 +53,17 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ onOpenReader }
                     <p className="text-sm text-obsidian/70">{part.subtitle}</p>
                   </div>
 
-                  <div
+                  {/* <div
                     className={`w-10 h-10 rounded-full border border-obsidian/15 flex items-center justify-center shrink-0 transition-transform ${
                       isOpen ? 'rotate-180 bg-obsidian text-white' : 'bg-alabaster text-obsidian'
                     }`}
                   >
                     <ChevronDown className="w-5 h-5" />
-                  </div>
+                  </div> */}
                 </button>
 
                 {/* Chapters List */}
-                {isOpen && (
+                {/* {isOpen && (
                   <div className="px-6 sm:px-7 pb-7 pt-2 border-t border-obsidian/10 space-y-4">
                     {part.chapters.map((chapter) => (
                       <div
@@ -118,7 +112,7 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ onOpenReader }
                       </div>
                     ))}
                   </div>
-                )}
+                )} */}
               </div>
             );
           })}
