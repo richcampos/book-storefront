@@ -25,7 +25,7 @@ export const AuthorSection: React.FC = () => {
                 <div className="my-auto flex flex-col items-center text-center py-4">
                   <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-vermilion to-amber-gold p-0.5 shadow-lg">
                     <div className="w-full h-full rounded-full bg-obsidian flex items-center justify-center font-serif italic text-3xl text-white">
-                      EV
+                      ICR
                     </div>
                   </div>
                   <h3 className="mt-4 font-display font-extrabold text-2xl text-white">
@@ -64,7 +64,7 @@ export const AuthorSection: React.FC = () => {
           <div className="lg:col-span-7 space-y-6">
             <span className="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-[0.2em] text-vermilion bg-vermilion-light px-3 py-1 rounded-full">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>CONOCE A LA AUTORA</span>
+              <span>CONOCE AL AUTOR</span>
             </span>
 
             <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-obsidian tracking-tight leading-tight">
@@ -80,14 +80,14 @@ export const AuthorSection: React.FC = () => {
             {/* Highlighted Author's Note Callout */}
             <div className="bg-white rounded-2xl p-6 sm:p-7 border-l-4 border-vermilion shadow-card space-y-3">
               <div className="text-xs font-mono font-bold uppercase tracking-widest text-obsidian/50">
-                UNA NOTA DEL ESCRITORIO DE ELENA
+                UNA NOTA DEL ESCRITORIO DE ISMAEL
               </div>
               <p className="font-serif italic text-xl text-obsidian leading-relaxed">
                 {author.authorNote}
               </p>
               <div className="pt-2 flex items-center justify-between">
                 <span className="font-serif italic text-2xl text-vermilion">
-                  — Elena Vance
+                  — Ismael Campos Rodríguez
                 </span>
                 <div className="flex items-center gap-4 text-xs text-obsidian/50 font-medium">
                   <span className="inline-flex items-center gap-1">

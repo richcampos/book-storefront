@@ -73,21 +73,21 @@ export function App() {
           onOpenReader={() => setIsReaderOpen(true)}
         />
 
-        <PressBanner />
+        {/* <PressBanner /> */}
 
-        <CorePillars />
+        {/* <CorePillars /> */}
 
         <TableOfContents onOpenReader={() => setIsReaderOpen(true)} />
 
-        <BonusToolkit />
+        {/* <BonusToolkit /> */}
 
-        <ReviewsSection />
+        {/* <ReviewsSection /> */}
 
         <AuthorSection />
 
-        <PricingSection onAddToCart={handleAddToCart} />
+        {/* <PricingSection onAddToCart={handleAddToCart} /> */}
 
-        <FaqSection />
+        {/* <FaqSection /> */}
       </main>
 
       <Footer onOpenReader={() => setIsReaderOpen(true)} />

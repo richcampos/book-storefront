@@ -20,8 +20,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenReader }) => {
     <footer className="bg-obsidian text-alabaster pt-16 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Lead Magnet Card: Send Chapter 1 PDF to Inbox */}
-        <div className="rounded-3xl bg-white/5 border border-white/10 p-7 sm:p-10 mb-14 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div className="lg:col-span-7 space-y-2">
+        {/* <div className="rounded-3xl bg-white/5 border border-white/10 p-7 sm:p-10 mb-14 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center"> */}
+          {/* <div className="lg:col-span-7 space-y-2">
             <span className="text-xs font-mono uppercase tracking-widest text-vermilion font-bold">
               ¿AÚN NO ESTÁS LISTO PARA COMPRAR?
             </span>
@@ -29,11 +29,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenReader }) => {
               Recibe gratis el Capítulo 1 (PDF + Audio) y la Auditoría de Atención de 7 Días en tu correo.
             </h3>
             <p className="text-sm text-white/65">
-              Únete a más de 210,000 lectores que reciben el ensayo dominical de 3 minutos de Elena Vance sobre enfoque de alto impacto. Cancela tu suscripción cuando quieras en un clic.
+              Únete a más de 210,000 lectores que reciben el ensayo dominical de 3 minutos de Ismael Campos Rodríguez sobre enfoque de alto impacto. Cancela tu suscripción cuando quieras en un clic.
             </p>
-          </div>
+          </div> */}
 
-          <div className="lg:col-span-5">
+          {/* <div className="lg:col-span-5">
             {submitted ? (
               <div className="bg-emerald-950/90 border border-emerald-500/40 rounded-2xl p-5 flex items-center gap-3 text-emerald-200">
                 <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0" />
@@ -64,17 +64,17 @@ export const Footer: React.FC<FooterProps> = ({ onOpenReader }) => {
                 </button>
               </form>
             )}
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
 
         {/* Bottom Links */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
           <div className="flex items-center gap-3">
             <span className="font-display font-extrabold text-white tracking-tight">
-              CADENCIA PROFUNDA
+              5 reglas de oro de Campos
             </span>
             <span>•</span>
-            <span>© {new Date().getFullYear()} Elena Vance & Editorial Cadence Zúrich.</span>
+            <span>© {new Date().getFullYear()} CaRIsma.</span>
           </div>
 
           <div className="flex flex-wrap items-center gap-6">
@@ -86,12 +86,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenReader }) => {
               <BookOpen className="w-3.5 h-3.5 text-vermilion" />
               Leer Capítulo de Muestra
             </button>
-            <a href="#editions" className="hover:text-white transition-colors">
-              Ediciones y Precios
-            </a>
-            <a href="#faq" className="hover:text-white transition-colors">
-              Garantía y Pedidos para Equipos
-            </a>
           </div>
         </div>
       </div>

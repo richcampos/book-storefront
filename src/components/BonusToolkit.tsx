@@ -114,7 +114,7 @@ export const BonusToolkit: React.FC = () => {
                 )}
               </div>
               <h4 className="font-display font-bold text-lg sm:text-xl text-white mt-0.5">
-                Escucha a Elena Vance narrar «La Esclusa Cognitiva de las 4:45 PM»
+                Escucha a Ismael Campos Rodríguez narrar «La Esclusa Cognitiva de las 4:45 PM»
               </h4>
               <p className="text-xs sm:text-sm text-white/60 mt-0.5">
                 Del Capítulo 6 • Audiolibro íntegro grabado en estudio incluido en el Paquete Maestría

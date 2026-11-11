@@ -62,12 +62,12 @@ export const BOOK_META = {
   subtitle: 'El Arte del Enfoque de Alto Impacto en un Mundo Distraído',
   hook: 'un sistema operativo práctico para recuperar tu atención, completar tu trabajo más importante en bloques de 90 minutos y terminar cada día a las 5:00 PM con cero residuo mental.',
   author: {
-    name: 'Elena Vance',
+    name: 'Ismael Campos Rodríguez',
     credentials: 'Científica del Comportamiento y Coach de Alto Rendimiento Ejecutivo',
     shortBio:
       'Exdirectora del Laboratorio de Sistemas Cognitivos en Zúrich y asesora de más de 60 equipos de ingeniería y diseño de alto crecimiento.',
     fullBio: [
-      'Durante los últimos doce años, Elena Vance ha investigado una pregunta aparentemente sencilla: ¿por qué algunos líderes, ingenieros y creadores producen el trabajo que define sus carreras en cuatro horas de enfoque al día, mientras otros se agotan trabajando doce?',
+      'Durante los últimos doce años, Ismael Campos Rodríguez ha investigado una pregunta aparentemente sencilla: ¿por qué algunos líderes, ingenieros y creadores producen el trabajo que define sus carreras en cuatro horas de enfoque al día, mientras otros se agotan trabajando doce?',
       'Tras dirigir estudios longitudinales con más de 4,200 profesionales del conocimiento en Zúrich, San Francisco y Tokio, descubrió que el rendimiento de élite nunca es producto de la fuerza bruta ni de rígidas rutinas a las 5:00 AM. Surge de diseñar un ritmo repetible —una Cadencia Profunda— que alinea los picos biológicos de atención con los problemas de mayor impacto.',
       'Su trabajo ha sido publicado en Harvard Business Review, Wired y The Atlantic, y su boletín semanal sobre rendimiento intencional es leído por más de 210,000 profesionales en todo el mundo.',
     ],
@@ -96,7 +96,7 @@ export const FORMAT_OPTIONS: BookFormat[] = [
     perks: [
       'Edición Coleccionista en Tapa Dura cosida en hilo (Con ex libris firmado)',
       'Descarga inmediata en formatos EPUB, PDF y Kindle',
-      'Audiolibro íntegro de 7.5 horas (Narrado por Elena Vance)',
+      'Audiolibro íntegro de 7.5 horas (Narrado por Ismael Campos Rodríguez)',
       'Bono: Sistema Operativo Cadencia Profunda para Notion y Obsidian (Valorado en $29)',
       'Bono: 4 Paisajes Sonoros Binaurales de 90 Minutos para Enfoque Profundo',
     ],
@@ -520,7 +520,7 @@ export const READER_REVIEWS: ReviewItem[] = [
     rating: 5,
     highlight: 'Rigor empírico absoluto y cero relleno.',
     quote:
-      'Se nota de inmediato que Elena Vance es una científica del comportamiento real. Cada protocolo está respaldado por investigaciones sobre carga cognitiva y no por clichés motivacionales. El ritual de Reinicio del Viernes ya es sagrado en mi casa.',
+      'Se nota de inmediato que Ismael Campos Rodríguez es una científica del comportamiento real. Cada protocolo está respaldado por investigaciones sobre carga cognitiva y no por clichés motivacionales. El ritual de Reinicio del Viernes ya es sagrado en mi casa.',
     avatarInitials: 'PN',
     verifiedFormat: 'Edición eBook',
   },
@@ -555,6 +555,6 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: '¿Ofrecen descuentos por volumen para equipos, clubes de lectura o eventos de empresa?',
     answer:
-      '¡Sí! Más de 140 empresas han adquirido Cadencia Profunda para sus equipos. Los pedidos de 10 o más ejemplares reciben un 25% de descuento junto con una guía de debate para equipos, y los pedidos de 50 o más ejemplares incluyen una sesión virtual en vivo de preguntas y respuestas de 45 minutos con Elena Vance.',
+      '¡Sí! Más de 140 empresas han adquirido Cadencia Profunda para sus equipos. Los pedidos de 10 o más ejemplares reciben un 25% de descuento junto con una guía de debate para equipos, y los pedidos de 50 o más ejemplares incluyen una sesión virtual en vivo de preguntas y respuestas de 45 minutos con Ismael Campos Rodríguez.',
   },
 ];

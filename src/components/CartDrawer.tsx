@@ -133,7 +133,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                     <div className="flex items-start justify-between gap-2">
                       <div>
                         <span className="text-[10px] font-mono uppercase tracking-wider text-vermilion font-bold">
-                          CADENCIA PROFUNDA POR ELENA VANCE
+                          CADENCIA PROFUNDA POR Ismael Campos Rodríguez
                         </span>
                         <h4 className="font-display font-bold text-base text-obsidian">
                           {format.name}

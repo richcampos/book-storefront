@@ -143,7 +143,7 @@ export const ChapterReaderModal: React.FC<ChapterReaderModalProps> = ({
           )}
 
           <div className="flex items-center justify-between text-xs font-mono opacity-50">
-            <span>CADENCIA PROFUNDA — ELENA VANCE</span>
+            <span>CADENCIA PROFUNDA — Ismael Campos Rodríguez</span>
             <span>PÁGINA {currentPage.pageNumber} DE 312</span>
           </div>
 
