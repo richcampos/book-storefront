@@ -9,13 +9,9 @@ export const Book3DShowcase: React.FC<Book3DShowcaseProps> = ({ onOpenReader }) 
   return (
     <div className="relative flex flex-col items-center justify-center py-4 select-none">
       {/* Subtle Ambient Glow */}
-      <div className="absolute -inset-4 bg-gradient-to-tr from-vermilion/20 via-amber-500/10 to-transparent rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -inset-4 bg-gradient-to-tr from-emerald-500/20 via-amber-500/15 to-sky-500/15 rounded-full blur-3xl pointer-events-none" />
 
       {/* Floating Bestseller Pill */}
-      <div className="z-20 -mb-3 mr-auto ml-4 sm:ml-8 inline-flex items-center gap-1.5 bg-obsidian text-white text-xs font-bold px-3.5 py-1.5 rounded-full shadow-lg border border-white/15">
-        <Award className="w-3.5 h-3.5 text-amber-gold" />
-        <span>+180,000 EJEMPLARES VENDIDOS</span>
-      </div>
 
       {/* 3D Book Container */}
       <div
@@ -26,66 +22,56 @@ export const Book3DShowcase: React.FC<Book3DShowcaseProps> = ({ onOpenReader }) 
         aria-label="Leer vista previa del Capítulo 1 de Cadencia Profunda"
         className="perspective-1200 cursor-pointer group relative my-2"
       >
-        <div className="relative w-[280px] sm:w-[330px] h-[410px] sm:h-[470px] book-tilt shadow-book rounded-r-xl rounded-l-[4px] bg-[#141619] text-alabaster border border-white/10 flex flex-col justify-between p-7 sm:p-8 overflow-hidden">
+        <div className="relative w-[280px] sm:w-[330px] h-[410px] sm:h-[470px] book-tilt shadow-book rounded-r-xl rounded-l-[4px] bg-[#141619] text-alabaster border border-obsidian/20 flex flex-col justify-between p-6 sm:p-7 overflow-hidden">
+          {/* Full-Bleed Uploaded Artwork Background */}
+          <img
+            src="/book-cover.jpg"
+            alt="Portada de Cadencia Profunda"
+            className="absolute inset-0 w-full h-full object-cover object-center z-0 transition-transform duration-700 group-hover:scale-[1.03]"
+          />
+
+          {/* Top & Bottom Editorial Readability Gradients (keeps center artwork clear) */}
+          <div className="absolute inset-0 bg-gradient-to-b from-obsidian/75 via-transparent to-obsidian/85 z-[5] pointer-events-none" />
+
           {/* Left Spine Highlight & Crease */}
-          <div className="absolute top-0 bottom-0 left-0 w-6 bg-gradient-to-r from-white/15 via-black/40 to-transparent z-20 pointer-events-none" />
-          <div className="absolute top-0 bottom-0 left-5 w-[1.5px] bg-white/10 z-20 pointer-events-none" />
+          <div className="absolute top-0 bottom-0 left-0 w-6 bg-gradient-to-r from-white/25 via-black/45 to-transparent z-20 pointer-events-none" />
+          <div className="absolute top-0 bottom-0 left-5 w-[1.5px] bg-white/20 z-20 pointer-events-none" />
 
-          {/* Top Editorial Band */}
-          <div className="relative z-10 flex items-center justify-between border-b border-white/15 pb-3 pl-2">
-            <span className="text-[10px] tracking-[0.2em] uppercase text-vermilion font-bold">
-              BESTSELLER INTERNACIONAL
-            </span>
-            <span className="text-[10px] font-mono text-white/50">ED. IV</span>
-          </div>
-
-          {/* Center Title Lockup */}
-          <div className="relative z-10 my-auto pl-2 pt-3">
-            <div className="inline-block bg-vermilion text-white text-[10px] font-extrabold tracking-[0.18em] uppercase px-2.5 py-0.5 rounded-sm mb-3">
-              EL NUEVO SISTEMA OPERATIVO
+          {/* Top Title & Editorial Header */}
+          <div className="relative z-10 pl-2">
+            <div className="flex items-center justify-between border-b border-white/25 pb-2">
+              <span className="text-[9px] tracking-[0.2em] uppercase text-amber-300 font-extrabold drop-shadow">
+                BESTSELLER INTERNACIONAL
+              </span>
+              <span className="text-[10px] font-mono text-white/80 drop-shadow">
+                ED. IV
+              </span>
             </div>
-            <h2 className="font-display font-extrabold text-3xl sm:text-4xl tracking-tight leading-[0.98] text-white uppercase">
-              CADENCIA
-              <br />
-              <span className="text-vermilion">PROFUNDA</span>
-            </h2>
-            <p className="font-serif italic text-base sm:text-lg text-alabaster/90 mt-3 leading-snug">
-              El Arte del Enfoque de Alto Impacto en un Mundo Distraído
-            </p>
 
-            {/* Minimalist Architectural Rhythm Graphic on Cover */}
-            <div className="mt-6 pt-5 border-t border-white/10 flex items-end gap-1.5 h-16">
-              {[28, 45, 95, 100, 88, 35, 22, 60, 92, 85, 30, 18, 25, 40].map((height, idx) => (
-                <div
-                  key={idx}
-                  style={{ height: `${height}%` }}
-                  className={`flex-1 rounded-t-sm transition-all duration-500 ${
-                    height > 80
-                      ? 'bg-vermilion group-hover:bg-amber-gold'
-                      : 'bg-white/20'
-                  }`}
-                />
-              ))}
-            </div>
-            <div className="flex justify-between text-[9px] font-mono uppercase tracking-widest text-white/40 mt-1.5">
-              <span>08:30 BLOQUE</span>
-              <span>SINC</span>
-              <span>16:45 CIERRE</span>
+            <div className="mt-3">
+              <h2 className="font-display font-extrabold text-3xl sm:text-4xl tracking-tight leading-[0.95] text-white uppercase drop-shadow-[0_2px_10px_rgba(0,0,0,0.65)]">
+                CADENCIA
+                <br />
+                <span className="text-amber-300">PROFUNDA</span>
+              </h2>
+              <p className="font-serif italic text-sm sm:text-base text-white/95 mt-1.5 leading-snug drop-shadow-[0_1px_6px_rgba(0,0,0,0.8)]">
+                El Arte del Enfoque de Alto Impacto en un Mundo Distraído
+              </p>
             </div>
           </div>
 
           {/* Author Footer */}
-          <div className="relative z-10 pl-2 pt-4 border-t border-white/15 flex items-end justify-between">
+          <div className="relative z-10 pl-2 pt-3 border-t border-white/25 flex items-end justify-between">
             <div>
-              <p className="text-[10px] uppercase tracking-[0.2em] text-white/50">
+              <p className="text-[9px] uppercase tracking-[0.2em] text-white/75 drop-shadow">
                 ESCRITO POR
               </p>
-              <p className="font-display font-bold text-base sm:text-lg tracking-wide text-white">
+              <p className="font-display font-bold text-base sm:text-lg tracking-wide text-white drop-shadow">
                 ELENA VANCE
               </p>
             </div>
             <div className="text-right">
-              <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-amber-gold group-hover:translate-x-0.5 transition-transform">
+              <span className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-300 group-hover:translate-x-0.5 transition-transform drop-shadow">
                 <BookOpen className="w-3.5 h-3.5" />
                 Leer Cap. 1 Gratis
               </span>
@@ -93,7 +79,7 @@ export const Book3DShowcase: React.FC<Book3DShowcaseProps> = ({ onOpenReader }) 
           </div>
 
           {/* Subtle Diagonal Foil Sheen */}
-          <div className="absolute -inset-full top-0 block w-1/2 -skew-x-12 bg-gradient-to-r from-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+          <div className="absolute -inset-full top-0 block w-1/2 -skew-x-12 bg-gradient-to-r from-transparent to-white/15 opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-20 pointer-events-none" />
         </div>
 
         {/* Right Page Edge Effect */}
