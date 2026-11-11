@@ -39,23 +39,14 @@ export const Book3DShowcase: React.FC<Book3DShowcaseProps> = ({ onOpenReader }) 
 
           {/* Top Title & Editorial Header */}
           <div className="relative z-10 pl-2">
-            <div className="flex items-center justify-between border-b border-white/25 pb-2">
-              <span className="text-[9px] tracking-[0.2em] uppercase text-amber-300 font-extrabold drop-shadow">
-                BESTSELLER INTERNACIONAL
-              </span>
-              <span className="text-[10px] font-mono text-white/80 drop-shadow">
-                ED. IV
-              </span>
-            </div>
-
             <div className="mt-3">
               <h2 className="font-display font-extrabold text-3xl sm:text-4xl tracking-tight leading-[0.95] text-white uppercase drop-shadow-[0_2px_10px_rgba(0,0,0,0.65)]">
-                CADENCIA
+                5 reglas de
                 <br />
-                <span className="text-amber-300">PROFUNDA</span>
+                <span className="text-amber-300">oro de Campos</span>
               </h2>
               <p className="font-serif italic text-sm sm:text-base text-white/95 mt-1.5 leading-snug drop-shadow-[0_1px_6px_rgba(0,0,0,0.8)]">
-                El Arte del Enfoque de Alto Impacto en un Mundo Distraído
+                El método M.E.T.A. para jugar al golf y tomar mejores decisiones.
               </p>
             </div>
           </div>
@@ -67,7 +58,7 @@ export const Book3DShowcase: React.FC<Book3DShowcaseProps> = ({ onOpenReader }) 
                 ESCRITO POR
               </p>
               <p className="font-display font-bold text-base sm:text-lg tracking-wide text-white drop-shadow">
-                ELENA VANCE
+                Ismael Campos Rodríguez
               </p>
             </div>
             <div className="text-right">
