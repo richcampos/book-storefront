@@ -62,7 +62,6 @@ export function App() {
       <Navbar
         cartCount={totalCartCount}
         onOpenCart={() => setIsCartOpen(true)}
-        onOpenReader={() => setIsReaderOpen(true)}
       />
 
       <main className="flex-1">
@@ -90,7 +89,7 @@ export function App() {
         {/* <FaqSection /> */}
       </main>
 
-      <Footer onOpenReader={() => setIsReaderOpen(true)} />
+      <Footer />
 
       <ChapterReaderModal
         isOpen={isReaderOpen}

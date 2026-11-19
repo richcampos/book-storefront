@@ -47,12 +47,6 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Actions */}
           <div className="flex items-center gap-2.5 sm:gap-3">
-            <button
-              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold text-obsidian bg-white border border-obsidian/15 hover:border-obsidian/40 transition-all shadow-sm"
-            >
-              Próximamente App de Tarjeta Scoring M.E.T.A.
-            </button>
-
             <a
               href="#editions"
               className="inline-flex items-center px-4 py-2 rounded-lg text-xs sm:text-sm font-bold text-white bg-vermilion hover:bg-vermilion-hover transition-all shadow-sm"
