@@ -11,6 +11,7 @@ import { AuthorSection } from './components/AuthorSection';
 import { PricingSection } from './components/PricingSection';
 import { FaqSection } from './components/FaqSection';
 import { Footer } from './components/Footer';
+import { LeadMagnetSection } from './components/LeadMagnetSection';
 import { ChapterReaderModal } from './components/ChapterReaderModal';
 import { CartDrawer, CartItem } from './components/CartDrawer';
 
@@ -62,7 +63,6 @@ export function App() {
       <Navbar
         cartCount={totalCartCount}
         onOpenCart={() => setIsCartOpen(true)}
-        onOpenReader={() => setIsReaderOpen(true)}
       />
 
       <main className="flex-1">
@@ -75,9 +75,9 @@ export function App() {
 
         {/* <PressBanner /> */}
 
-        {/* <CorePillars /> */}
-
         <TableOfContents onOpenReader={() => setIsReaderOpen(true)} />
+
+        <CorePillars />
 
         {/* <BonusToolkit /> */}
 
@@ -85,12 +85,14 @@ export function App() {
 
         <AuthorSection />
 
+        <LeadMagnetSection />
+
         {/* <PricingSection onAddToCart={handleAddToCart} /> */}
 
         {/* <FaqSection /> */}
       </main>
 
-      <Footer onOpenReader={() => setIsReaderOpen(true)} />
+      <Footer />
 
       <ChapterReaderModal
         isOpen={isReaderOpen}

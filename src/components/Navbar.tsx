@@ -1,16 +1,14 @@
 import React from 'react';
-import { BookOpen, ShoppingBag, Sparkles } from 'lucide-react';
+import { ShoppingBag, Sparkles } from 'lucide-react';
 
 interface NavbarProps {
   cartCount: number;
   onOpenCart: () => void;
-  onOpenReader: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
   cartCount,
   onOpenCart,
-  onOpenReader,
 }) => {
   return (
     <header className="sticky top-0 z-40 w-full">
@@ -22,11 +20,11 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Brand Logo */}
           <a href="#" className="flex items-center gap-3 group">
             <div className="w-9 h-9 rounded-lg bg-obsidian text-alabaster flex items-center justify-center font-display font-extrabold text-sm tracking-tighter group-hover:bg-vermilion transition-colors">
-              5C
+              C
             </div>
             <div className="flex flex-col">
               <span className="font-display font-extrabold text-base tracking-tight leading-none text-obsidian">
-                5 reglas de oro de Campos
+                CaRIsma
               </span>
               <span className="text-[11px] text-obsidian/60 font-medium tracking-wider uppercase mt-0.5">
                 Por Ismael Campos Rodríguez
@@ -37,29 +35,21 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Navigation Links */}
           <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-obsidian/75">
             <a href="#inside" className="hover:text-vermilion transition-colors">
-              Las 5 reglas de oro
+              Los Libros
+            </a>
+            <a href="#services" className="hover:text-vermilion transition-colors">
+              Servicios para Empresas
             </a>
             <a href="#author" className="hover:text-vermilion transition-colors">
               El Autor
+            </a>
+            <a href="#recursos" className="hover:text-vermilion transition-colors">
+              Recursos
             </a>
           </nav>
 
           {/* Actions */}
           <div className="flex items-center gap-2.5 sm:gap-3">
-            <button
-              onClick={onOpenReader}
-              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold text-obsidian bg-white border border-obsidian/15 hover:border-obsidian/40 transition-all shadow-sm"
-            >
-              <BookOpen className="w-3.5 h-3.5 text-vermilion" />
-              Leer Extracto
-            </button>
-
-            <button
-              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold text-obsidian bg-white border border-obsidian/15 hover:border-obsidian/40 transition-all shadow-sm"
-            >
-              Próximamente App de Tarjeta Scoring M.E.T.A.
-            </button>
-
             <a
               href="#editions"
               className="inline-flex items-center px-4 py-2 rounded-lg text-xs sm:text-sm font-bold text-white bg-vermilion hover:bg-vermilion-hover transition-all shadow-sm"

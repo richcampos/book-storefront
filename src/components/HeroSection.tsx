@@ -1,19 +1,5 @@
 import React from 'react';
-import {
-  Star,
-  BookOpen,
-  ShoppingBag,
-  CheckCircle2,
-  ShieldCheck,
-  Zap,
-  Headphones,
-} from 'lucide-react';
-import {
-  BOOK_META,
-  FORMAT_OPTIONS,
-  FormatId,
-  BookFormat,
-} from '../data/bookData';
+import { FormatId, BookFormat } from '../data/bookData';
 import { Book3DShowcase } from './Book3DShowcase';
 
 interface HeroSectionProps {
@@ -24,14 +10,8 @@ interface HeroSectionProps {
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
-  selectedFormat,
-  onSelectFormat,
-  onAddToCart,
   onOpenReader,
 }) => {
-  const activeFormat =
-    FORMAT_OPTIONS.find((f) => f.id === selectedFormat) || FORMAT_OPTIONS[0];
-
   return (
     <section className="relative overflow-hidden pt-8 pb-16 sm:py-16 lg:py-20 bg-editorial-grid border-b border-obsidian/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,21 +23,29 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Main Headline */}
             <div className="space-y-3">
               <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-[54px] text-obsidian tracking-tight leading-[1.06]">
-                Deja de trabajar 10 horas al día con solo{' '}
-                <span className="font-serif italic font-normal text-vermilion underline decoration-vermilion/30 decoration-2 underline-offset-4">
-                  45 minutos
-                </span>{' '}
-                de enfoque real.
+                Estrategia bajo presión: Del campo de golf a la alta dirección.
               </h1>
               <p className="text-base sm:text-lg text-obsidian/75 leading-relaxed max-w-2xl">
-                <strong className="text-obsidian font-semibold">
-                  {BOOK_META.title}
-                </strong>{' '}
-                es {BOOK_META.hook}
+                Liderazgo, resiliencia y toma de decisiones cuando el margen de
+                error es mínimo. Descubre la metodología aplicada en la alta
+                gerencia y el golf estratégico.
               </p>
             </div>
 
-            {/* Interactive Edition / Format Selector */}
+            <div className="flex flex-col sm:flex-row gap-3 pt-2">
+              <a
+                href="#inside"
+                className="inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-sm sm:text-base font-bold text-white bg-vermilion hover:bg-vermilion-hover transition-colors shadow-sm"
+              >
+                Conocer los Libros
+              </a>
+              <a
+                href="#services"
+                className="inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-sm sm:text-base font-bold text-obsidian bg-white border border-obsidian/20 hover:border-obsidian/40 transition-colors shadow-sm"
+              >
+                Servicios para Empresas
+              </a>
+            </div>
 
             {/* Trust Micro-bar */}
           </div>

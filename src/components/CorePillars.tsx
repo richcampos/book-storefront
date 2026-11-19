@@ -1,99 +1,87 @@
 import React from 'react';
-import { XCircle, CheckCircle2, ArrowUpRight } from 'lucide-react';
-import { PILLAR_COMPARISON, CORE_PILLARS } from '../data/bookData';
+import { Presentation, BriefcaseBusiness, Flag, ArrowRight } from 'lucide-react';
 
 export const CorePillars: React.FC = () => {
+  const services = [
+    {
+      icon: Presentation,
+      format: '60–90 min',
+      title: 'Conferencia Magistral',
+      subtitle: 'La Estrategia del Bogey Inteligente en los Negocios',
+      audience: 'Convenciones y comités directivos',
+      number: '01',
+    },
+    {
+      icon: BriefcaseBusiness,
+      format: '4–8 horas',
+      title: 'Taller Ejecutivo',
+      subtitle: 'El Método M.E.T.A. aplicado a la Ejecución Directiva',
+      audience:
+        'Ejercicios prácticos de diagnóstico operativo para mandos medios y gerencias',
+      number: '02',
+    },
+    {
+      icon: Flag,
+      format: 'Jornada vivencial',
+      title: 'Experiencia en Campo',
+      subtitle: 'Liderazgo y Gestión de Riesgos en el Green',
+      audience:
+        'Clínica o outing de golf aplicada a la estrategia corporativa',
+      number: '03',
+    },
+  ];
+
   return (
-    <section id="framework" className="py-20 sm:py-24 border-b border-obsidian/10">
+    <section id="services" className="py-20 sm:py-24 bg-alabaster border-b border-obsidian/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-4">
           <span className="inline-block text-xs font-extrabold uppercase tracking-[0.2em] text-vermilion bg-vermilion-light px-3 py-1 rounded-full">
-            EL CAMBIO DE PARADIGMA
+            FORMACIÓN Y CONSULTORÍA B2B
           </span>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-obsidian tracking-tight">
-            Por qué trabajar más horas te está fallando y qué lo reemplaza.
+            Estrategia corporativa aplicada bajo presión
           </h2>
           <p className="text-base sm:text-lg text-obsidian/70 leading-relaxed">
-            La mayoría de los sistemas de productividad intentan convertirte en un procesador de correos más rápido.{' '}
-            <strong className="text-obsidian">Cadencia Profunda</strong> rediseña la arquitectura de tu semana para que el ruido superficial jamás toque tus mejores horas cognitivas.
+            Experiencias diseñadas para convertir la disciplina del golf estratégico
+            en mejores decisiones, liderazgo resiliente y ejecución empresarial.
           </p>
         </div>
 
-        {/* Contrast Grid: Reactive Hustle vs Deep Cadence */}
-        <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-          {/* Left: Reactive Trap */}
-          <div className="rounded-2xl bg-white border border-obsidian/10 p-7 sm:p-9 shadow-sm">
-            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-rose-700 bg-rose-50 px-3 py-1 rounded-full">
-              <XCircle className="w-4 h-4" />
-              <span>EL MODO REACTIVO ACTUAL</span>
-            </div>
-            <h3 className="mt-4 font-display font-extrabold text-2xl text-obsidian">
-              {PILLAR_COMPARISON.reactive.title}
-            </h3>
-            <p className="text-sm text-obsidian/60 mt-1">
-              {PILLAR_COMPARISON.reactive.subtitle}
-            </p>
-            <ul className="mt-6 space-y-4">
-              {PILLAR_COMPARISON.reactive.items.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-3 text-sm sm:text-base text-obsidian/75">
-                  <XCircle className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Right: Deep Cadence System */}
-          <div className="rounded-2xl bg-obsidian text-alabaster border border-obsidian p-7 sm:p-9 shadow-xl relative overflow-hidden">
-            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-300 bg-emerald-950/80 border border-emerald-500/30 px-3 py-1 rounded-full">
-              <CheckCircle2 className="w-4 h-4" />
-              <span>EL NUEVO SISTEMA OPERATIVO</span>
-            </div>
-            <h3 className="mt-4 font-display font-extrabold text-2xl text-white">
-              {PILLAR_COMPARISON.cadence.title}
-            </h3>
-            <p className="text-sm text-white/60 mt-1">
-              {PILLAR_COMPARISON.cadence.subtitle}
-            </p>
-            <ul className="mt-6 space-y-4">
-              {PILLAR_COMPARISON.cadence.items.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-3 text-sm sm:text-base text-alabaster/90">
-                  <CheckCircle2 className="w-5 h-5 text-vermilion shrink-0 mt-0.5" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* 4 Core Pillar Cards */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {CORE_PILLARS.map((pillar, index) => (
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+          {services.map((service) => {
+            const Icon = service.icon;
+            return (
             <div
-              key={index}
-              className="bg-white rounded-2xl p-6 border border-obsidian/10 hover:border-vermilion/50 transition-all shadow-card flex flex-col justify-between group"
+              key={service.number}
+              className="relative bg-white rounded-2xl p-7 border border-obsidian/10 hover:border-vermilion/50 transition-all shadow-card flex flex-col group"
             >
-              <div>
-                <div className="flex items-center justify-between text-xs font-mono">
-                  <span className="font-bold text-obsidian/50">{pillar.tag}</span>
-                  <span className="font-bold text-vermilion bg-vermilion-light px-2.5 py-0.5 rounded-full">
-                    {pillar.metric}
-                  </span>
+              <div className="flex items-start justify-between">
+                <div className="w-12 h-12 rounded-xl bg-vermilion-light flex items-center justify-center">
+                  <Icon className="w-6 h-6 text-vermilion" />
                 </div>
-                <h4 className="mt-4 font-display font-extrabold text-xl text-obsidian group-hover:text-vermilion transition-colors">
-                  {pillar.title}
-                </h4>
-                <p className="mt-2.5 text-sm text-obsidian/70 leading-relaxed">
-                  {pillar.description}
-                </p>
+                <span className="text-xs font-mono font-bold text-obsidian/35">
+                  {service.number}
+                </span>
               </div>
-              <div className="mt-6 pt-4 border-t border-obsidian/10 flex items-center justify-between text-xs font-bold text-obsidian/60 group-hover:text-obsidian">
-                <span>Incluido en la Parte {index + 1}</span>
-                <ArrowUpRight className="w-4 h-4 text-vermilion" />
+              <span className="mt-6 text-xs font-mono font-bold uppercase tracking-wider text-vermilion">
+                {service.format}
+              </span>
+              <h3 className="mt-2 font-display font-extrabold text-2xl text-obsidian">
+                {service.title}
+              </h3>
+              <p className="mt-3 font-display font-bold text-lg leading-snug text-obsidian">
+                {service.subtitle}
+              </p>
+              <p className="mt-4 text-sm text-obsidian/70 leading-relaxed">
+                {service.audience}
+              </p>
+              <div className="mt-6 pt-5 border-t border-obsidian/10 flex items-center justify-between text-xs font-bold text-obsidian/60 group-hover:text-vermilion transition-colors">
+                <span>Solicitar propuesta</span>
+                <ArrowRight className="w-4 h-4" />
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

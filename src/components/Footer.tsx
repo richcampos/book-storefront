@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
-import { Mail, CheckCircle2, ArrowRight, BookOpen } from 'lucide-react';
+import { Mail, CheckCircle2, ArrowRight } from 'lucide-react';
 
-interface FooterProps {
-  onOpenReader: () => void;
-}
-
-export const Footer: React.FC<FooterProps> = ({ onOpenReader }) => {
+export const Footer: React.FC = () => {
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
@@ -75,17 +71,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenReader }) => {
             </span>
             <span>•</span>
             <span>© {new Date().getFullYear()} CaRIsma.</span>
-          </div>
-
-          <div className="flex flex-wrap items-center gap-6">
-            <button
-              type="button"
-              onClick={onOpenReader}
-              className="hover:text-white inline-flex items-center gap-1 transition-colors"
-            >
-              <BookOpen className="w-3.5 h-3.5 text-vermilion" />
-              Leer Capítulo de Muestra
-            </button>
           </div>
         </div>
       </div>
