@@ -43,6 +43,9 @@ export const Navbar: React.FC<NavbarProps> = ({
             <a href="#author" className="hover:text-vermilion transition-colors">
               El Autor
             </a>
+            <a href="#recursos" className="hover:text-vermilion transition-colors">
+              Recursos
+            </a>
           </nav>
 
           {/* Actions */}

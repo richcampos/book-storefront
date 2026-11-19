@@ -11,6 +11,7 @@ import { AuthorSection } from './components/AuthorSection';
 import { PricingSection } from './components/PricingSection';
 import { FaqSection } from './components/FaqSection';
 import { Footer } from './components/Footer';
+import { LeadMagnetSection } from './components/LeadMagnetSection';
 import { ChapterReaderModal } from './components/ChapterReaderModal';
 import { CartDrawer, CartItem } from './components/CartDrawer';
 
@@ -83,6 +84,8 @@ export function App() {
         {/* <ReviewsSection /> */}
 
         <AuthorSection />
+
+        <LeadMagnetSection />
 
         {/* <PricingSection onAddToCart={handleAddToCart} /> */}
 
