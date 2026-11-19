@@ -63,21 +63,21 @@ export const BOOK_META = {
   hook: 'un sistema operativo práctico para recuperar tu atención, completar tu trabajo más importante en bloques de 90 minutos y terminar cada día a las 5:00 PM con cero residuo mental.',
   author: {
     name: 'Ismael Campos Rodríguez',
-    credentials: 'Científica del Comportamiento y Coach de Alto Rendimiento Ejecutivo',
+    credentials: 'Ingeniero Químico (UNAM)',
     shortBio:
-      'Exdirectora del Laboratorio de Sistemas Cognitivos en Zúrich y asesora de más de 60 equipos de ingeniería y diseño de alto crecimiento.',
+      'Más de 40 años liderando operaciones de Seguridad Industrial, Gerencia de Riesgos y Riesgos Globales para grandes corporativos y el sector energético en México.',
     fullBio: [
-      'Durante los últimos doce años, Ismael Campos Rodríguez ha investigado una pregunta aparentemente sencilla: ¿por qué algunos líderes, ingenieros y creadores producen el trabajo que define sus carreras en cuatro horas de enfoque al día, mientras otros se agotan trabajando doce?',
-      'Tras dirigir estudios longitudinales con más de 4,200 profesionales del conocimiento en Zúrich, San Francisco y Tokio, descubrió que el rendimiento de élite nunca es producto de la fuerza bruta ni de rígidas rutinas a las 5:00 AM. Surge de diseñar un ritmo repetible —una Cadencia Profunda— que alinea los picos biológicos de atención con los problemas de mayor impacto.',
-      'Su trabajo ha sido publicado en Harvard Business Review, Wired y The Atlantic, y su boletín semanal sobre rendimiento intencional es leído por más de 210,000 profesionales en todo el mundo.',
+      'Ismael Campos Rodríguez es Ingeniero Químico egresado de la UNAM y cuenta con más de 40 años de trayectoria liderando operaciones de Seguridad Industrial, Gerencia de Riesgos y Riesgos Globales.',
+      'Ha desarrollado su experiencia acompañando a grandes corporativos y organizaciones del sector energético en México, integrando gestión estratégica, resiliencia y toma de decisiones en entornos de alta presión.',
+      'Es fundador de la firma de consultoría estratégica CaRIsma, desde la cual comparte la metodología M.E.T.A. y la estrategia del golf aplicado al liderazgo ejecutivo.',
     ],
     authorNote:
-      '"No escribí Cadencia Profunda para ayudarte a exprimir tres tareas más en un martes ya asfixiante. Lo escribí para que dejes de confundir movimiento con progreso, protejas las dos horas al día que realmente transforman tu carrera y cierres tu portátil con la mente en calma."',
+      '"La estrategia comienza por reconocer el terreno, anticipar el riesgo y ejecutar con claridad, incluso cuando el margen de error es mínimo."',
     stats: [
-      { value: '180,000+', label: 'Ejemplares Vendidos' },
-      { value: '4.9 / 5.0', label: 'Valoración Media (2,410+ Reseñas)' },
-      { value: '14 Idiomas', label: 'Traducciones Internacionales' },
-      { value: '312 Páginas', label: 'Cero Relleno • Diagramas Táctiles' },
+      { value: '40+', label: 'Años de experiencia' },
+      { value: 'UNAM', label: 'Ingeniería Química' },
+      { value: 'México', label: 'Sector energético y corporativo' },
+      { value: 'CaRIsma', label: 'Consultoría estratégica' },
     ],
   },
 };
