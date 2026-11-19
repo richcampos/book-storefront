@@ -75,9 +75,9 @@ export function App() {
 
         {/* <PressBanner /> */}
 
-        {/* <CorePillars /> */}
-
         <TableOfContents onOpenReader={() => setIsReaderOpen(true)} />
+
+        <CorePillars />
 
         {/* <BonusToolkit /> */}
 

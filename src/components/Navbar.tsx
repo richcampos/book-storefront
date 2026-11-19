@@ -1,16 +1,14 @@
 import React from 'react';
-import { BookOpen, ShoppingBag, Sparkles } from 'lucide-react';
+import { ShoppingBag, Sparkles } from 'lucide-react';
 
 interface NavbarProps {
   cartCount: number;
   onOpenCart: () => void;
-  onOpenReader: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
   cartCount,
   onOpenCart,
-  onOpenReader,
 }) => {
   return (
     <header className="sticky top-0 z-40 w-full">
@@ -39,6 +37,9 @@ export const Navbar: React.FC<NavbarProps> = ({
             <a href="#inside" className="hover:text-vermilion transition-colors">
               Los Libros
             </a>
+            <a href="#services" className="hover:text-vermilion transition-colors">
+              Servicios para Empresas
+            </a>
             <a href="#author" className="hover:text-vermilion transition-colors">
               El Autor
             </a>
@@ -46,14 +47,6 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Actions */}
           <div className="flex items-center gap-2.5 sm:gap-3">
-            <button
-              onClick={onOpenReader}
-              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold text-obsidian bg-white border border-obsidian/15 hover:border-obsidian/40 transition-all shadow-sm"
-            >
-              <BookOpen className="w-3.5 h-3.5 text-vermilion" />
-              Leer Extracto
-            </button>
-
             <button
               className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold text-obsidian bg-white border border-obsidian/15 hover:border-obsidian/40 transition-all shadow-sm"
             >

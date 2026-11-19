@@ -40,7 +40,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 Conocer los Libros
               </a>
               <a
-                href="#author"
+                href="#services"
                 className="inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-sm sm:text-base font-bold text-obsidian bg-white border border-obsidian/20 hover:border-obsidian/40 transition-colors shadow-sm"
               >
                 Servicios para Empresas
