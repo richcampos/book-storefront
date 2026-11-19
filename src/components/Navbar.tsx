@@ -22,11 +22,11 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Brand Logo */}
           <a href="#" className="flex items-center gap-3 group">
             <div className="w-9 h-9 rounded-lg bg-obsidian text-alabaster flex items-center justify-center font-display font-extrabold text-sm tracking-tighter group-hover:bg-vermilion transition-colors">
-              5C
+              C
             </div>
             <div className="flex flex-col">
               <span className="font-display font-extrabold text-base tracking-tight leading-none text-obsidian">
-                5 reglas de oro de Campos
+                CaRIsma
               </span>
               <span className="text-[11px] text-obsidian/60 font-medium tracking-wider uppercase mt-0.5">
                 Por Ismael Campos Rodríguez
@@ -37,7 +37,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Navigation Links */}
           <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-obsidian/75">
             <a href="#inside" className="hover:text-vermilion transition-colors">
-              Las 5 reglas de oro
+              Los Libros
             </a>
             <a href="#author" className="hover:text-vermilion transition-colors">
               El Autor
