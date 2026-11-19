@@ -1,77 +1,107 @@
 import React, { useState } from 'react';
-import { Mail, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Linkedin, Mail, Send } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  const [interest, setInterest] = useState('Compra de libros por volumen');
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
     if (!email.trim()) return;
-    setSubmitted(true);
-    setEmail('');
+
+    const subject = encodeURIComponent(`Consulta: ${interest}`);
+    const body = encodeURIComponent(
+      `Motivo de contacto: ${interest}\nCorreo de contacto: ${email}`
+    );
+    window.location.href = `mailto:icamposr@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
-    <footer className="bg-obsidian text-alabaster pt-16 pb-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Lead Magnet Card: Send Chapter 1 PDF to Inbox */}
-        {/* <div className="rounded-3xl bg-white/5 border border-white/10 p-7 sm:p-10 mb-14 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center"> */}
-          {/* <div className="lg:col-span-7 space-y-2">
-            <span className="text-xs font-mono uppercase tracking-widest text-vermilion font-bold">
-              ¿AÚN NO ESTÁS LISTO PARA COMPRAR?
+    <footer id="contacto" className="bg-obsidian text-alabaster">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+          <div className="lg:col-span-5 space-y-5">
+            <span className="inline-block text-xs font-mono font-bold uppercase tracking-[0.18em] text-vermilion">
+              Contacto directo
             </span>
-            <h3 className="font-display font-extrabold text-2xl sm:text-3xl text-white">
-              Recibe gratis el Capítulo 1 (PDF + Audio) y la Auditoría de Atención de 7 Días en tu correo.
-            </h3>
-            <p className="text-sm text-white/65">
-              Únete a más de 210,000 lectores que reciben el ensayo dominical de 3 minutos de Ismael Campos Rodríguez sobre enfoque de alto impacto. Cancela tu suscripción cuando quieras en un clic.
+            <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-white leading-tight">
+              Hablemos de estrategias que generen resultados
+            </h2>
+            <p className="text-base text-white/65 leading-relaxed">
+              Contacta a Ismael Campos Rodríguez para compras, conferencias,
+              talleres o consultoría estratégica con CaRIsma.
             </p>
-          </div> */}
 
-          {/* <div className="lg:col-span-5">
-            {submitted ? (
-              <div className="bg-emerald-950/90 border border-emerald-500/40 rounded-2xl p-5 flex items-center gap-3 text-emerald-200">
-                <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0" />
-                <div className="text-sm">
-                  <strong className="text-white block">¡Revisa tu bandeja de entrada!</strong>
-                  El Capítulo 1 (PDF + MP3) y tu hoja de Auditoría de Energía de 7 Días van en camino.
-                </div>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2.5">
-                <div className="relative flex-1">
-                  <Mail className="w-4 h-4 text-white/40 absolute left-3.5 top-1/2 -translate-y-1/2" />
-                  <input
-                    type="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Escribe tu mejor correo..."
-                    className="w-full pl-10 pr-4 py-3.5 rounded-xl bg-white/10 border border-white/15 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-vermilion"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="px-5 py-3.5 rounded-xl bg-vermilion hover:bg-vermilion-hover text-white font-display font-bold text-sm inline-flex items-center justify-center gap-1.5 shrink-0 transition-colors"
-                >
-                  <span>Enviar Capítulo 1</span>
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              </form>
-            )}
-          </div> */}
-        {/* </div> */}
-
-        {/* Bottom Links */}
-        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
-          <div className="flex items-center gap-3">
-            <span className="font-display font-extrabold text-white tracking-tight">
-              5 reglas de oro de Campos
-            </span>
-            <span>•</span>
-            <span>© {new Date().getFullYear()} CaRIsma.</span>
+            <div className="flex flex-col sm:flex-row lg:flex-col gap-3 text-sm">
+              <a
+                href="mailto:icamposr@gmail.com"
+                className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors"
+              >
+                <Mail className="w-4 h-4 text-vermilion" />
+                icamposr@gmail.com
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors"
+              >
+                <Linkedin className="w-4 h-4 text-vermilion" />
+                Perfil de LinkedIn
+              </a>
+            </div>
           </div>
+
+          <form
+            onSubmit={handleSubmit}
+            className="lg:col-span-7 rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-7 space-y-4"
+          >
+            <label htmlFor="contact-interest" className="block">
+              <span className="block text-sm font-bold text-white mb-2">
+                Motivo de contacto
+              </span>
+              <select
+                id="contact-interest"
+                value={interest}
+                onChange={(event) => setInterest(event.target.value)}
+                className="w-full px-4 py-3.5 rounded-xl bg-white text-obsidian text-sm border border-white/20 focus:outline-none focus:ring-2 focus:ring-vermilion"
+              >
+                <option>Compra de libros por volumen</option>
+                <option>Cotizar Conferencia/Taller</option>
+                <option>Consultoría CaRIsma</option>
+              </select>
+            </label>
+
+            <label htmlFor="contact-email" className="block">
+              <span className="block text-sm font-bold text-white mb-2">
+                Correo electrónico
+              </span>
+              <input
+                id="contact-email"
+                type="email"
+                required
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+                placeholder="nombre@empresa.com"
+                className="w-full px-4 py-3.5 rounded-xl bg-white text-obsidian text-sm border border-white/20 placeholder:text-obsidian/45 focus:outline-none focus:ring-2 focus:ring-vermilion"
+              />
+            </label>
+
+            <button
+              type="submit"
+              className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-vermilion text-white text-sm font-bold hover:bg-vermilion-hover transition-colors"
+            >
+              <Send className="w-4 h-4" />
+              Enviar consulta
+            </button>
+          </form>
+        </div>
+
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
+          <span className="font-display font-extrabold text-white tracking-tight">
+            CaRIsma
+          </span>
+          <span>© {new Date().getFullYear()} CaRIsma. Todos los derechos reservados.</span>
         </div>
       </div>
     </footer>
